@@ -1,0 +1,122 @@
+:root{
+  --color-Soft-red: hsl(10, 79%, 65%);
+  --color-cyan : hsl(186, 34%, 60%);
+  --color-cream : hsl(27, 66%, 92%);
+  --color-pale-orange : hsl(33, 100%, 98%);
+  --color-medium-brown : hsl(28, 10%, 53%);
+  --color-dark-brown : hsl(25, 47%, 15%)
+}
+@font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+}
+
+.dark-brown{
+  color: var(--color-dark-brown);
+}
+.medium-brown{
+  color: var(--color-medium-brown);
+}
+.pale-orange{
+  color: var(--color-pale-orange);
+}
+*{
+  /* font-family: 'DM Sans', sans-serif; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  
+  background-color: var(--color-cream);
+}
+.main{
+  padding-top: 3rem;
+  height: 40rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.mainComp{
+  margin-top: 1rem;
+  background-color: var(--color-pale-orange);
+}
+.main-header{
+  background: var(--color-Soft-red);
+}
+.chart{
+  /* height: 18.75rem; */
+}
+.bar1,.bar2,.bar3,.bar4,.bar5,.bar6,.bar7{
+  text-align: -webkit-center;
+  && .dollar-text{
+    padding: 5px;
+    color: var(--color-pale-orange);
+    background-color: var(--color-dark-brown);
+    opacity: 0;
+    border-radius: 5px;
+  }
+}
+.bar1:active,.bar2:active,.bar3:active,.bar4:active,.bar5:active,.bar6:active,.bar7:active{
+  && .bar-1,.bar-2,.bar-3,.bar-4,.bar-5,.bar-6,.bar-7{
+    background-color: var(--color-cyan);
+  }
+}
+.bar1:hover,.bar2:hover,.bar3:hover,.bar4:hover,.bar5:hover,.bar6:hover,.bar7:hover{
+  && .dollar-text{
+    opacity: 1;
+  }
+  && .bar-1,.bar-2,.bar-3,.bar-4,.bar-5,.bar-6,.bar-7{
+    opacity: 0.8;
+  }
+}
+.bar-1{
+  width:2rem;
+  height: 3rem;
+  background-color: var(--color-Soft-red);
+}
+.bar-2{
+  
+  width:2rem;
+  height: 5rem;
+  background-color: var(--color-Soft-red);
+}
+.bar-3{
+  
+  width:2rem;
+  height: 10rem;
+  background-color: var(--color-Soft-red);
+}
+.bar-4{
+  
+  width:2rem;
+  height: 4.5rem;
+  background-color: var(--color-Soft-red);
+}
+.bar-5{
+  
+  width:2rem;
+  height: 4.1rem;
+  background-color: var(--color-Soft-red);
+}
+.bar-6{
+  
+  width:2rem;
+  height: 8rem;
+  background-color: var(--color-Soft-red);
+}
+.bar-7{
+  
+  width:2rem;
+  height: 4.3rem;
+  background-color: var(--color-Soft-red);
+}
+
+@media (min-width:375px) and (max-width:570px) {
+  /* .main{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .chart{
+    width: 5rem;
+  } */
+}
